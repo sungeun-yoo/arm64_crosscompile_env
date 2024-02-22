@@ -32,5 +32,6 @@ RUN wget https://github.com/sungeun-yoo/opencv_install/releases/download/opencv4
 # Tensorflow
 RUN git clone https://github.com/tensorflow/tensorflow.git tensorflow_src
 
+RUN cp -r linux_toolchain /workspace/linux_toolchain
 # 컨테이너 실행 시 기본 명령
 CMD ["/bin/bash"]
