@@ -2,6 +2,16 @@
 arm64_crosscompile_env docker 환경
 
 OpenCV4.x, tensorflow-lite 기본설치해서 프로젝트를 빌드하기 위한 기본 구성을 가지고 있음
+##
+Docker image build
+```
+docker build -t arm_aarch64_crosscompile_env:1.0 .
+```
+
+Docker start container
+```
+docker run -it -v /home/workspace:/workspace arm_aarch64_crosscompile_env:1.0
+```
 
 ## OpenCV4 install
 ### 1. 직접 빌드하는 방법
