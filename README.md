@@ -10,7 +10,7 @@ git clone https://github.com/opencv/opencv.git
 cd opencv &&  mkdir build && cd build
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_TOOLCHAIN_FILE=/opencv/platforms/linux/aarch64-gnu.toolchain.cmake -D CMAKE_CXX_STANDARD=11 ../ && make -j24 && make install
 ```
-### 2. 4.9 버전 빌든된것 설치 (dockerfile 에 포함되어있음)
+### 2. OpencCV 4.9 버전 prebuilt install (dockerfile 에 포함되어있음)
 이 방법은 aarch64 보드에 직접 설치할때 유용함.
 ```
 wget https://github.com/sungeun-yoo/opencv_install/releases/download/opencv409_aarch64_install/opencv409_aarch64_install.tar \
